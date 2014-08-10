@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="1dp"
+    android:paddingTop="1dp"
+    android:paddingBottom="0.5dp"
+    android:orientation="vertical"
+    android:background="#555555"
+    >
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:background="#333333"
+    android:gravity="center"
+    android:orientation="vertical">
+         
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.5dp"
+        >
+        
+        <ImageView 
+        android:id="@+id/hot_author_avatar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:scaleType="centerCrop"
+        />
+        
+        <TextView 
+        android:id="@+id/hot_author_name"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_toRightOf="@id/hot_author_avatar"
+        android:layout_marginLeft="4dp"
+        android:gravity="center_vertical"
+        android:textSize="12sp"
+        android:textColor="#ffffff"/>
+        
+    </RelativeLayout>
+    
+    <ImageView 
+        android:id="@+id/hot_video_cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:scaleType="centerCrop"
+       />
+    
+    <TextView 
+        android:id="@+id/hot_video_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="3.5dp"
+        android:layout_marginRight="2.5dp"
+        android:textSize="11sp"
+        android:textColor="#ffffff"
+        />
+        
+    </LinearLayout>
+   
+</LinearLayout>
